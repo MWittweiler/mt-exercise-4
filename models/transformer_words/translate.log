@@ -1,0 +1,23 @@
+2025-05-27 10:39:39,281 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2025-05-27 10:39:39,306 - INFO - joeynmt.model - Building an encoder-decoder model...
+2025-05-27 10:39:39,408 - INFO - joeynmt.model - Enc-dec model built.
+2025-05-27 10:39:39,785 - INFO - joeynmt.helpers - Load model from /home/miwiy/mt-exercise-4/models/23000.ckpt.
+2025-05-27 10:39:39,805 - INFO - joeynmt.tokenizers - it tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-27 10:39:39,805 - INFO - joeynmt.tokenizers - de tokenizer: BasicTokenizer(level=word, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none)
+2025-05-27 10:39:39,826 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2025-05-27 10:39:39,826 - INFO - joeynmt.prediction - Predicting 1567 example(s)... (Beam search with beam_size=5, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2025-05-27 10:40:13,120 - INFO - joeynmt.prediction - Generation took 33.2895[sec]. (No references given)
+{
+ "name": "BLEU",
+ "score": 0.6,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+ "verbose_score": "5.3/1.7/0.4/0.1 (BP = 0.720 ratio = 0.753 hyp_len = 22320 ref_len = 29640)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.5.1"
+}
+time taken:
+37 seconds
